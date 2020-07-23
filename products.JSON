@@ -5,7 +5,8 @@
 			"price": 0.76,
 			"category": "fruits and vegetables",
 			"emoji": "💰",
-			"emojiName": "Red apple"
+			"emojiName": "Red apple",
+			"month": "all year"
 		},
 		{
 			"id": 2,
@@ -13,7 +14,8 @@
 			"price": 0.76,
 			"category": "fruits and vegetables",
 			"emoji": "💰",
-			"emojiName": "Red apple"
+			"emojiName": "Red apple",
+			"month": "autumn"
 		}
 	]
 }

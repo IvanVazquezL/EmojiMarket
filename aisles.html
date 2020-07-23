@@ -1,22 +1,258 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>🧀 🍉 🍎 EmojiMarket 🧀 🍉 🍎</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles2.css">
-    <link rel="shortcut icon" href="favicon.ico">
-  </head>
-  <body>
-    <h1>🤣</h1>
-    <h1>🧀 🍉 🍎 EmojiMarket 🧀 🍉 🍎</h1>
-    <h1>💰 <span class="initialMoney"></span></h1>
-    <h1>🛒</h1>
 
-    <script src="https://kit.fontawesome.com/6a79a452de.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="javascript/aisles.js" charset="utf-8"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>🧀 🍉 🍎 EmojiMarket 🧀 🍉 🍎</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles2.css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+  <nav>
+    <ul class="nav">
+      <li class="nav-item">
+        <h1 class="notepad">📝</h1>
+      </li>
+      <li class="nav-item">
+        <h1 class="logo">🧀 🍉 🍎 EmojiMarket 🧀 🍉 🍎</h1>
+      </li>
+      <li class="nav-item">
+        <h1 class="money">💰 <span class="initialMoney"></span></h1>
+      </li>
+      <li class="nav-item">
+        <h1 class="cartEmoji">🛒</h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="aisle">
+    <div class="fruits">
+      <div class="container">
+        <div class="numberCategory">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body numberAisle">
+              <h3 class="numberCenter">
+                1
+              </h3>
+            </div>
+            <div class="card-body ">
+              <h3 class="category numberCenter">
+                Fruits <br>& <br>Vegetables
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍎</p>
+                <h5 class="card-title">Apple</h5>
+                <h6>$13</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍌</p>
+                <h5 class="card-title">Banana</h5>
+                <h6>$6</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍉</p>
+                <h5 class="card-title">Watermelon</h5>
+                <h6>$4</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍊</p>
+                <h5 class="card-title">Orange</h5>
+                <h6>$13</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍇</p>
+                <h5 class="card-title">Grapes</h5>
+                <h6>$20</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍑</p>
+                <h5 class="card-title">Peach</h5>
+                <h6>$6</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍈</p>
+                <h5 class="card-title">Melon</h5>
+                <h6>$1.32 per pound</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍋</p>
+                <h5 class="card-title">Lemon</h5>
+                <h6>$0.57 per pound</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍍</p>
+                <h5 class="card-title">Pineapple</h5>
+                <h6>$0.38 per pound</h6>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="row">
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🥭</p>
+                <h5 class="card-title">Mango</h5>
+                <h6>$1.32 per pound</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍏</p>
+                <h5 class="card-title">Green Apple</h5>
+                <h6>$0.57 per pound</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍐</p>
+                <h5 class="card-title">Pear</h5>
+                <h6>$0.38 per pound</h6>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="row">
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍒</p>
+                <h5 class="card-title">Cherries</h5>
+                <h6>$1.32 per pound</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍓</p>
+                <h5 class="card-title">Strawberries</h5>
+                <h6>$0.57 per pound</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🥝</p>
+                <h5 class="card-title">Kiwi</h5>
+                <h6>$0.38 per pound</h6>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="row">
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🍅</p>
+                <h5 class="card-title">Tomato</h5>
+                <h6>$1.32 per pound</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🥥</p>
+                <h5 class="card-title">Coconut</h5>
+                <h6>$0.57 per pound</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm cardPadding">
+            <div class="card cardBackground" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text">🥑</p>
+                <h5 class="card-title">Avocado</h5>
+                <h6>$0.38 per pound</h6>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="noteSidebar hidden">
+      <button type="button" class="close closeNote" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="list">
+        <h1>Emoji List</h1>
+        <div class="listItems">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">Apple</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">Orange</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cartSidebar hidden">
+      <button type="button" class="close closeCart" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h1 class="emojiUser"></h1>
+      <p>🍎 X 1  $1.32</p>
+    </div>
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/6a79a452de.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="javascript/aisles.js" charset="utf-8"></script>
+</body>
+
 </html>

@@ -5,8 +5,14 @@ var emoji = JSON.parse(myData).emoji;
 var month = JSON.parse(myData).month;
 var initialMoney = randomIntFromInterval(1000, 5000);
 var moneySpan = document.querySelector(".initialMoney");
-console.log(initialMoney);
-moneySpan.textContent = initialMoney;
+var notepadEmoji = document.querySelector(".notepad");
+var notepadDiv = document.querySelector(".noteSidebar");
+var btnClose = document.querySelector(".closeNote");
+var audioMarket = new Audio('audio/supermarket1.mp3');
+var cartEmoji = document.querySelector(".cartEmoji");
+var cartDiv = document.querySelector(".cartSidebar");
+var btnCloseCart = document.querySelector(".closeCart");
+var emojiPlayer = document.querySelector(".emojiUser");
 
 function randomIntFromInterval(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -15,22 +21,13 @@ function randomIntFromInterval(min, max) {
 class Products{
   async getProducts(){
     try {
+      //retrieval of data from the json file
       let result=await fetch('products.json')
       let data = await result.json();
       let products = data.items;
-      console.log("hello");
-      console.log(products);
-      products = products.map(item=>{
-        const {id} = item.id;
-        const {name} = item.name;
-        const {price} = item.price;
-        const {category} = item.category;
-        const {emoji} = item.emoji;
-        const {emojiName} = item.emojiName;
-
-        return {id,name,price,category,emoji,emojiName}
-      });
+      console.log(products)
       return products;
+
     } catch (error) {
       console.log(error);
     }
@@ -38,8 +35,19 @@ class Products{
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
+  makeSound();
+  moneySpan.textContent = initialMoney;
+  if(emoji == "ROFL"){
+    emojiPlayer.textContent = "🤣";
+  }
+  else if(emoji== "Thinker"){
+    emojiPlayer.textContent = "🤔";
+  }
+  else{
+    emojiPlayer.textContent = "🤪";
+  }
   const products = new Products();
-  console.log("hi");
+
   products.getProducts().then(products =>{
     products.forEach(product => {
       console.log(product.emoji);
@@ -48,6 +56,30 @@ document.addEventListener("DOMContentLoaded",()=>{
   });
 
 });
+
+function makeSound(){
+  audioMarket.play();
+}
+
+audioMarket.onended = function() {
+  makeSound();
+};
+
+notepadEmoji.addEventListener("click",() =>{
+  notepadDiv.classList.remove("hidden");
+})
+
+btnClose.addEventListener("click",() =>{
+  notepadDiv.classList.add("hidden");
+})
+
+cartEmoji.addEventListener("click",() =>{
+  cartDiv.classList.remove("hidden");
+})
+
+btnCloseCart.addEventListener("click",() =>{
+  cartDiv.classList.add("hidden");
+})
 
 // const div = document.createElement('div');
 //       div.innerHTML = `

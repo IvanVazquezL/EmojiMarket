@@ -3,6 +3,7 @@ var containerDiv = document.querySelector(".container");
 var numberOfEmojiButtons = document.querySelectorAll(".btnSelect").length;
 var monthsDiv = document.querySelector(".containerMonths");
 var numberOfMonthsButtons = document.querySelectorAll(".btnMonth").length;
+var audioSelect = new Audio('audio/select.mp3');
 var emojiMonth = {
   "emoji" : "",
   "month" : ""
@@ -15,10 +16,12 @@ playButton.addEventListener("click", function () {
 });
 
 function makeSound(){
-  var audioSelect = new Audio('audio/select.mp3');
   audioSelect.play();
-
 }
+
+audioSelect.onended = function() {
+  makeSound();
+};
 
 for(var i=0;i<numberOfEmojiButtons;i++){
   document.querySelectorAll(".btnSelect")[i].addEventListener("click", function () {

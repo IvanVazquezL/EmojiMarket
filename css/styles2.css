@@ -1,0 +1,171 @@
+/* .nav > li{
+  margin-left:70px;
+  margin-right:70px;
+} */
+
+nav{
+  padding-top: 10px;
+  background-color: purple;
+  color:white;
+  padding-bottom: 10px;
+}
+
+.logo{
+  margin-left:150px;
+  margin-right:100px;
+}
+
+.notepad{
+  margin-left:20px;
+  margin-right:100px;
+  cursor: pointer;
+}
+
+.money{
+  margin-right:100px;
+}
+
+.cartEmoji{
+  cursor: pointer;
+}
+
+.aisle{
+  position:relative;
+  height:400px;
+}
+
+html{
+  height:400px;
+}
+
+.noteSidebar{
+  height: 895px;
+  width: 420px;
+  /* position: relative; */
+  background-image: url("/images/notepad.png");
+  /* transform: translateY(-20%); */
+position:absolute;
+ top:0;
+ left:0;
+}
+
+.list{
+  font-family: 'Indie Flower', cursive;
+}
+
+.list h1{
+  text-align: center;
+  padding-top: 34px;
+}
+
+/* .close{
+  background-color: red;
+} */
+
+.close {
+  width:30px;
+  height: 30px;
+  text-shadow: none;
+  opacity:1;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.form-check-label{
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.listItems{
+  padding-left: 100px;
+}
+
+.form-check{
+  padding-top:17px;
+  padding-bottom: 10px;
+}
+
+.form-check-input{
+  width: 30px;
+  height: 30px;
+}
+
+.cartSidebar{
+  height: 895px;
+  width: 420px;
+  /* position: relative; */
+  background-color: #f5dd42;
+  /* transform: translate(221.3%,-137%); */
+  position:absolute;
+   top:0;
+   right:0;
+}
+
+.closeCart{
+  float:left !important;
+}
+
+.fruits{
+  background-color: #4eb51f;
+  padding-top: 40px;
+  position: relative;
+}
+
+.numberAisle{
+  background-color: #29303b;
+  color: white;
+  width: 10px;
+  padding-top: 75px;
+}
+
+.numberCenter{
+  text-align: center;
+  font-size: 50px;
+}
+
+.numberCategory{
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 20px;
+}
+
+.card p{
+  font-size:100px;
+}
+
+
+.cardBackground{
+  margin: auto;
+  background-color:green;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+
+.cardBackground:active{
+  background-color:#1a4f02;
+}
+
+h5{
+    color:white;
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.cardPadding{
+  padding-bottom: 20px;
+}
+
+h6{
+  color:white;
+  text-align: center;
+}
+
+.emojiUser{
+  padding-top: 30px;
+  text-align: center;
+}
