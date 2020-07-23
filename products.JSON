@@ -1,0 +1,19 @@
+{
+	"items": [{
+			"id": 1,
+			"name": "apple",
+			"price": 0.76,
+			"category": "fruits and vegetables",
+			"emoji": "💰",
+			"emojiName": "Red apple"
+		},
+		{
+			"id": 2,
+			"name": "orange",
+			"price": 0.76,
+			"category": "fruits and vegetables",
+			"emoji": "💰",
+			"emojiName": "Red apple"
+		}
+	]
+}
