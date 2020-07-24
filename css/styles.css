@@ -53,6 +53,11 @@ h5{
   border-color: #a768e3;
 }
 
+.btn:active{
+  background-color:#470047 !important;
+  border-color: #470047 !important;
+}
+
 .startContainer{
   text-align: center;
   position:relative;
@@ -78,8 +83,10 @@ h5{
 
 .containerMonths{
   position:absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  /* left: 50%;
+  transform: translate(-50%, 0); */
+  padding-left: 60px;
+  padding-top: 30px;
 }
 
 .btnMonth{
@@ -90,4 +97,20 @@ h5{
   width:200px;
   background-color:purple;
   border-color: purple;
+}
+
+.cardSelector{
+  cursor:pointer;
+}
+
+.cardSelector:active{
+  background-color:#470047;
+}
+
+.cardSeason{
+  cursor:pointer;
+}
+
+.cardSeason:active{
+  background-color:#470047;
 }

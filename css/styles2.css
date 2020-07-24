@@ -13,6 +13,7 @@ nav{
 .logo{
   margin-left:150px;
   margin-right:100px;
+  cursor:pointer;
 }
 
 .notepad{
@@ -58,10 +59,6 @@ position:absolute;
   padding-top: 34px;
 }
 
-/* .close{
-  background-color: red;
-} */
-
 .close {
   width:30px;
   height: 30px;
@@ -70,7 +67,7 @@ position:absolute;
 }
 
 .hidden{
-  visibility: hidden;
+  display: none;
 }
 
 .form-check-label{
@@ -128,23 +125,11 @@ position:absolute;
 .numberCategory{
   padding-left: 300px;
   padding-right: 300px;
-  padding-bottom: 20px;
+  /* padding-bottom: 10px; */
 }
 
 .card p{
   font-size:100px;
-}
-
-
-.cardBackground{
-  margin: auto;
-  background-color:green;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  cursor:pointer;
-}
-
-.cardBackground:active{
-  background-color:#1a4f02;
 }
 
 h5{
@@ -168,4 +153,129 @@ h6{
 .emojiUser{
   padding-top: 30px;
   text-align: center;
+}
+
+.cartItems{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.total{
+  text-align: center;
+  font-size: 30px;
+}
+
+.next{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.next span{
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.Winter{
+  background-color: #98e2e3;
+  padding-top: 40px;
+  position: relative;
+}
+
+.Spring{
+  background-color: lawngreen;
+  padding-top: 40px;
+  position: relative;
+}
+
+.Summer{
+  background-color: orange;
+  padding-top: 40px;
+  position: relative;
+}
+
+.Autumn{
+  background-color: brown;
+  padding-top: 40px;
+  position: relative;
+}
+
+.cardBackground{
+  margin: auto;
+  background-color:green;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+
+.cardBackground:active{
+  background-color:#1a4f02;
+}
+
+.cardWinter{
+  margin: auto;
+  background-color:#020d6e;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+
+.cardWinter:active{
+  background-color:#010a57;
+}
+
+.cardSpring{
+  margin: auto;
+  background-color:#32CD32;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+
+.cardSpring:active{
+  background-color:green;
+}
+
+.cardSummer{
+  margin: auto;
+  background-color:#ff5a08;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+
+.cardSummer:active{
+  background-color:#d14a06;
+}
+
+.cardAutumn{
+  margin: auto;
+  background-color:#CD853F;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+
+.cardAutumn:active{
+  background-color:#8B4513;
+}
+
+.minus,.cross{
+  display: inline-block;
+  font-size: 15px;
+  padding-left: 20px;
+  position:relative;
+  top:-5px;
+  padding-bottom: 20px;
+}
+
+li{
+  list-style-type: none;
+}
+
+.minus p{
+  cursor:pointer;
+  height:10px !important;
+  margin-bottom: 0 !important;
+}
+
+.cross p{
+  cursor:pointer;
+  height:10px !important;
+  margin-bottom: 0 !important;
 }
