@@ -183,7 +183,7 @@ h6{
 }
 
 .Spring{
-  background-color: lawngreen;
+  background-color: #70cf15;
   padding-top: 40px;
   position: relative;
 }
@@ -255,7 +255,16 @@ h6{
   background-color:#8B4513;
 }
 
-.minus,.cross{
+.minus{
+  display: none;
+  font-size: 15px;
+  padding-left: 20px;
+  position:relative;
+  top:-5px;
+  padding-bottom: 20px;
+}
+
+.cross{
   display: inline-block;
   font-size: 15px;
   padding-left: 20px;
